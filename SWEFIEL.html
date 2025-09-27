@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweifel® – Premium Snacks & Wafers | Crunchy, Fresh, and Delicious Every Bite</title>
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+    
+    /* Header styles */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    .logo {
+      width: 43px;
+      height: 43px;
+      border-radius: 10px;
+    }
+    
+    .brand-name {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    
+    /* Navigation styles */
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 15px;
+    }
+    
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      padding: 5px 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    
+    nav a:hover {
+      background-color: #f0f0f0;
+    }
+    
+    .shop-now-btn {
+      background-color: red;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      padding: 8px 15px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    
+    /* Hero section styles */
+    .hero {
+      position: relative;
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('1758731401007.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      margin-bottom: 20px;
+    }
+    
+    .hero-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    
+    .hero h1 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+    
+    .hero h2 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+    
+    .hero-btn {
+      background-color: red;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      padding: 12px 25px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    
+    /* Product section styles */
+    .product {
+      background: #F6F6F9;
+      border-radius: 20px;
+      padding: 30px 20px;
+      margin: 0 20px 40px;
+      text-align: center;
+    }
+    
+    .product-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .product h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+    
+    .product h4 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+    
+    .price {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+    
+    .price-underline {
+      display: inline-block;
+      border-bottom: 2px solid black;
+      padding: 0 15px;
+    }
+    
+    .order-btn {
+      background: #00FF35;
+      border: 1px solid #00FF35;
+      border-radius: 10px;
+      padding: 12px 25px;
+      color: white;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    
+    /* Footer styles */
+    footer {
+      background: gray;
+      padding: 20px;
+      border-radius: 10px 10px 0 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .footer-logo-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    .footer-contact {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: white;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+      
+      nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      
+      .hero h1 {
+        font-size: 1.5rem;
+      }
+      
+      .hero h2 {
+        font-size: 1.3rem;
+      }
+      
+      footer {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .brand-name {
+        font-size: 1.3rem;
+      }
+      
+      nav ul {
+        gap: 10px;
+      }
+      
+      nav a {
+        font-size: 0.9rem;
+        padding: 5px 8px;
+      }
+      
+      .hero {
+        padding: 30px 15px;
+      }
+      
+      .hero h1 {
+        font-size: 1.3rem;
+      }
+      
+      .hero h2 {
+        font-size: 1.1rem;
+      }
+      
+      .product {
+        margin: 0 15px 30px;
+        padding: 20px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img class="logo" src="20250925_155449.jpg" alt="Sweifel Logo">
+      <h1 class="brand-name">SWEIFEL</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Products</a></li>
+      </ul>
+    </nav>
+    <button class="shop-now-btn" onclick="window.location.href='mailto:sweifel.pk.com@gmail.com'">
+      Shop Now
+    </button>
+  </header>
+  
+  <section class="hero">
+    <h1>Simple Taste, Strong Crunch, Smart Choice.</h1>
+    <h2>Premium Snacks & Wafers</h2>
+    <button class="hero-btn" onclick="window.location.href='mailto:sweifel.pk.com@gmail.com'">
+      Shop Now
+    </button>
+  </section>
+  
+  <section class="product">
+    <img class="product-image" src="1758867863791.jpg" alt="Sweifel Product">
+    <h3>Pack of 12</h3>
+    <h4>Every Bite Counts</h4>
+    <div class="price">Price</div>
+    <div class="price-underline">Rs/100</div>
+    <br>
+    <button class="order-btn" onclick="window.location.href='mailto:sweifel.pk.com@gmail.com'">
+      Order Now
+    </button>
+  </section>
+  
+  <footer>
+    <div class="footer-logo-container">
+      <img class="logo" src="20250925_155449.jpg" alt="Sweifel Logo">
+      <h3 class="brand-name">SWEIFEL</h3>
+    </div>
+    <div class="footer-contact">Contact Us</div>
+    <h3>sweifel.pk.com@gmail.com</h3>
+  </footer>
+</body>
+</html>
